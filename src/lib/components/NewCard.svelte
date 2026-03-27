@@ -1,6 +1,5 @@
 <script lang="ts">
-  export let titulo: string;
-  export let fecha: string;
+  let { titulo, fecha }: { titulo: string; fecha: string } = $props();
 </script>
 
 <div class="border p-4 rounded">

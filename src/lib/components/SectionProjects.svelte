@@ -1,8 +1,10 @@
 <script lang="ts">
-  export let proyectos: {
+  type Proyecto = {
     titulo: string;
     descripcion: string;
-  }[];
+  };
+
+  let { proyectos }: { proyectos: Proyecto[] } = $props();
 </script>
 
 <section class="py-10 text-center">
