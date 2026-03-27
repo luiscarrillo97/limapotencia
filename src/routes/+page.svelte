@@ -1,25 +1,27 @@
 <script lang="ts">
-  type Proyecto = {
-    titulo: string;
-    descripcion: string;
-  };
+  import Hero from '$lib/components/Hero.svelte';
+  import SectionProjects from '$lib/components/SectionProjects.svelte';
+  import NewsCard from '$lib/components/NewsCard.svelte';
 
-  type Noticia = {
-    titulo: string;
-    fecha: string;
-  };
-
-  const proyectos: Proyecto[] = [
-    {
-      titulo: "Modernización del transporte",
-      descripcion: "Nuevos corredores"
-    }
+  const proyectos = [
+    { titulo: "Transporte", descripcion: "Mejora urbana" }
   ];
 
-  const noticias: Noticia[] = [
-    {
-      titulo: "Nueva obra en Lima",
-      fecha: "2026"
-    }
+  const noticias = [
+    { titulo: "Nueva obra", fecha: "2026" }
   ];
 </script>
+
+<Hero />
+
+<SectionProjects {proyectos} />
+
+<section class="p-6">
+  <h2 class="text-2xl font-bold">Noticias</h2>
+
+  <div class="grid md:grid-cols-2 gap-4 mt-4">
+    {#each noticias as n}
+      <NewsCard {...n} />
+    {/each}
+  </div>
+</section>
