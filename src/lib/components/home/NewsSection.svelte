@@ -35,9 +35,13 @@
     <p class="text-sm font-semibold uppercase tracking-wide text-sky-600">{item.date}</p>
     <h3 class="mt-3 text-2xl font-bold text-slate-900">{item.title}</h3>
     <p class="mt-4 text-slate-600">{item.text}</p>
-    <a href="/noticias" class="mt-6 inline-block font-semibold text-slate-900">
-      Leer más →
-    </a>
+    <button
+  type="button"
+  class="mt-6 inline-block font-semibold text-slate-900"
+  aria-label="Leer más noticias"
+>
+  Leer más →
+</button>
   </article>
 {/each}
     </div>

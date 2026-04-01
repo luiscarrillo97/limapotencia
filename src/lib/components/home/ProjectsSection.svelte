@@ -30,12 +30,13 @@
         </h2>
       </div>
 
-      <a
-        href="/proyectos"
-        class="inline-flex w-fit items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold text-slate-800 transition hover:bg-white"
-      >
-        Ver todos
-      </a>
+      <button
+  type="button"
+  class="mt-6 inline-block font-semibold text-slate-900"
+  aria-label="Leer más noticias"
+>
+  Leer más →
+</button>
     </div>
 
     <div class="grid gap-6 lg:grid-cols-3">
@@ -45,7 +46,7 @@
     <div class="p-6">
       <h3 class="text-2xl font-bold text-slate-900">{project.title}</h3>
       <p class="mt-3 text-slate-600">{project.text}</p>
-      <a href="/proyectos" class="mt-5 inline-block font-semibold text-sky-700">
+      <a href="" class="mt-5 inline-block font-semibold text-sky-700">
         Conocer más →
       </a>
     </div>
