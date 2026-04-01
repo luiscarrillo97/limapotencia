@@ -1,49 +1,43 @@
-<section class="relative h-screen flex items-center justify-center text-white overflow-hidden">
-
-  <!-- imagen -->
-  <img 
-    src="/ciudad-bicentenario.jpg" 
-    alt="Ciudad Bicentenario"
-    class="absolute inset-0 w-full h-full object-cover scale-105"
+<section class="relative min-h-[92vh] overflow-hidden text-white">
+  <img
+    src="/ciudad-bicentenario.jpg"
+    alt="Vista urbana de referencia"
+    class="absolute inset-0 h-full w-full object-cover"
   />
 
-  <!-- overlay premium -->
-  <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/30"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
 
-  <!-- contenido -->
-  <div class="relative z-10 text-center max-w-4xl px-6">
+  <div class="relative mx-auto flex min-h-[92vh] max-w-7xl items-center px-6 py-20">
+    <div class="max-w-3xl">
+      <span class="mb-5 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm backdrop-blur">
+        Desarrollo urbano · Infraestructura · Gestión
+      </span>
 
-    <!-- badge -->
-    <span class="inline-block mb-4 px-4 py-1 text-sm bg-white/10 backdrop-blur rounded-full border border-white/20">
-      Proyecto Urbano
-    </span>
+      <h1 class="text-4xl font-black leading-tight md:text-6xl">
+        Lima Potencia Mundial
+      </h1>
 
-    <!-- título -->
-    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-      Ciudad Bicentenario
-    </h1>
+      <p class="mt-6 max-w-2xl text-base text-white/85 md:text-xl">
+        Una plataforma digital para presentar proyectos, visión de ciudad,
+        noticias y contenido audiovisual con una imagen moderna, clara y sólida.
+      </p>
 
-    <!-- subtítulo -->
-    <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-      Un modelo de desarrollo urbano moderno, ordenado y sostenible pensado para el futuro del Perú.
-    </p>
+      <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+        <a
+          href="#proyectos"
+          class="inline-flex items-center justify-center rounded-xl bg-sky-500 px-7 py-3 font-semibold text-white shadow-lg transition hover:bg-sky-400"
+        >
+          Ver proyectos
+        </a>
 
-    <!-- botones -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-
-      <button class="bg-red-600 hover:bg-red-700 transition px-8 py-3 rounded-lg font-semibold shadow-lg">
-        Conocer más
-      </button>
-
-      <button class="border border-white/30 hover:bg-white/10 transition px-8 py-3 rounded-lg font-semibold">
-        Ver proyectos
-      </button>
-
+        <a
+          href="#video"
+          class="inline-flex items-center justify-center rounded-xl border border-white/25 bg-white/10 px-7 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/15"
+        >
+          Ver presentación
+        </a>
+      </div>
     </div>
-
   </div>
-
-  <!-- efecto degradado inferior -->
-  <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/80 to-transparent"></div>
-
 </section>
