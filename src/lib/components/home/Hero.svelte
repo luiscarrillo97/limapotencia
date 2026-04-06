@@ -1,6 +1,6 @@
 <section class="relative min-h-[92vh] overflow-hidden text-white">
   <img
-    src="/ciudad-bicentenario.jpg"
+    src="/slogan.jpg"
     alt="Vista urbana de referencia"
     class="absolute inset-0 h-full w-full object-cover"
   />
